@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0898F3031A203FD4004F9010 /* FireFlies03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0898F3011A203FD4004F9010 /* FireFlies03.cpp */; };
+		2A4998A169CA843F667231BC /* ZoomBlurPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C90ACB14ABBAFF2D79870969 /* ZoomBlurPass.cpp */; };
+		30A9432CBD050473C1FCBE95 /* HorizontalTiltShifPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E057E68FAC5F129C6EE3ACC0 /* HorizontalTiltShifPass.cpp */; };
+		3CCAC30BAA70C2EB2205296F /* BleachBypassPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0D12099BB26A6711D077F /* BleachBypassPass.cpp */; };
+		3D5904F2C34E4A05C70CFA88 /* ConvolutionPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6384D1426E94F259FFD6165 /* ConvolutionPass.cpp */; };
+		43F27E5E493C43408201B420 /* ContrastPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 487B8BE8ABDD771EA9E87751 /* ContrastPass.cpp */; };
+		47A703A811B0EE16E6965D39 /* VerticalTiltShifPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FCD77E2FA31B6BA8069B5 /* VerticalTiltShifPass.cpp */; };
+		4BF48B12FBF696A6DF506F7D /* DofPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAF4D9D63AADBFB465E11166 /* DofPass.cpp */; };
+		4C35719EDC8D87425D8AE6DC /* RenderPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA0B2A15BFF308EAEFE0EF78 /* RenderPass.cpp */; };
+		4DA60856E5CB07E724775165 /* FxaaPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CCA3CAD784B6D650997C236 /* FxaaPass.cpp */; };
+		5140FA69BA53F40CA233C073 /* RGBShiftPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EFA41FC26E11D58D1AF4D /* RGBShiftPass.cpp */; };
+		6C043E27ABC34F4D376A388D /* FakeSSSPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05C7F3D897AB489A6E988C5F /* FakeSSSPass.cpp */; };
+		6E7D9F4D28B72DBF21B1D959 /* KaleidoscopePass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD495793D86C102AAE497629 /* KaleidoscopePass.cpp */; };
+		82432C3F3F7A863D85FC77C5 /* DofAltPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D186682AD0A9EC269FCDD9D9 /* DofAltPass.cpp */; };
+		852333874676A76FDD655F73 /* ToonPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE11C5FEE9427E0AFAC085B8 /* ToonPass.cpp */; };
+		8AE352011D7B787C9BC0EA22 /* PixelatePass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E416DF1F4DC5282136ADAF7 /* PixelatePass.cpp */; };
+		91B641C197D7F2A23B8C5840 /* GodRaysPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E454A15C15965FD1BDD3B604 /* GodRaysPass.cpp */; };
+		B10CF2322466E2C3726EFFF8 /* SSAOPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEDE0E526F4D0AB67E68DF91 /* SSAOPass.cpp */; };
+		B3BC8B6667B5595BFD7C6711 /* BloomPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B77D5DF7BBD7E730B6E7E94 /* BloomPass.cpp */; };
+		B4B0341C3A41DE572B9C7FD3 /* LimbDarkeningPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92586CB19AED016B2BC0E347 /* LimbDarkeningPass.cpp */; };
+		B81485D401EFAB0A45D6E8EF /* LUTPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AD3C03B7AD4A3BCEA61BBA /* LUTPass.cpp */; };
+		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		C39545B8FF43529ED25EE761 /* EdgePass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C69686827B9443AF2C8338C /* EdgePass.cpp */; };
+		D7FCEED20503EE61DB11A31B /* RimHighlightingPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C03B9E52B3E93A222341FB8 /* RimHighlightingPass.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
+		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
+		E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */; };
+		E45BE97F0E8CC7DD009D7055 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */; };
+		E45BE9800E8CC7DD009D7055 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */; };
+		E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9770E8CC7DD009D7055 /* CoreServices.framework */; };
+		E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
+		E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
+		E4672E7D0FC34570436C9814 /* NoiseWarpPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3080B8DEA3AE1A8B2A587E24 /* NoiseWarpPass.cpp */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
+		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
+		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
+		E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
+		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
+		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		F9F1B7B6EB94F8DB66C6C6B2 /* PostProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 195825FE8925B7E866B13146 /* PostProcessing.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05C7F3D897AB489A6E988C5F /* FakeSSSPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = FakeSSSPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/FakeSSSPass.cpp"; sourceTree = SOURCE_ROOT; };
+		0898F3011A203FD4004F9010 /* FireFlies03.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FireFlies03.cpp; sourceTree = "<group>"; };
+		0898F3021A203FD4004F9010 /* FireFlies03.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireFlies03.h; sourceTree = "<group>"; };
+		08D18B5BA77D90127339D34D /* DofAltPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DofAltPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/DofAltPass.h"; sourceTree = SOURCE_ROOT; };
+		0A09A99D43A2D1F0AB04B50E /* SSAOPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SSAOPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/SSAOPass.h"; sourceTree = SOURCE_ROOT; };
+		0B77D5DF7BBD7E730B6E7E94 /* BloomPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = BloomPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/BloomPass.cpp"; sourceTree = SOURCE_ROOT; };
+		0D18898271C58A888D0CCB1C /* PixelatePass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PixelatePass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/PixelatePass.h"; sourceTree = SOURCE_ROOT; };
+		16BE3AEE356AE9CEEF197C13 /* RenderPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RenderPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/RenderPass.h"; sourceTree = SOURCE_ROOT; };
+		195825FE8925B7E866B13146 /* PostProcessing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = PostProcessing.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/PostProcessing.cpp"; sourceTree = SOURCE_ROOT; };
+		26705B02517E669D6A7FF27E /* EdgePass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = EdgePass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/EdgePass.h"; sourceTree = SOURCE_ROOT; };
+		2B804FC444070500CB4FF1B5 /* LimbDarkeningPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LimbDarkeningPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/LimbDarkeningPass.h"; sourceTree = SOURCE_ROOT; };
+		2EE109270359230A49932038 /* VerticalTiltShifPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = VerticalTiltShifPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/VerticalTiltShifPass.h"; sourceTree = SOURCE_ROOT; };
+		3080B8DEA3AE1A8B2A587E24 /* NoiseWarpPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = NoiseWarpPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/NoiseWarpPass.cpp"; sourceTree = SOURCE_ROOT; };
+		3C69686827B9443AF2C8338C /* EdgePass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = EdgePass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/EdgePass.cpp"; sourceTree = SOURCE_ROOT; };
+		3E0F0FB1BC1C3936C70FA0D7 /* RGBShiftPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RGBShiftPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/RGBShiftPass.h"; sourceTree = SOURCE_ROOT; };
+		4134081624AD003F389F4743 /* LUTPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LUTPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/LUTPass.h"; sourceTree = SOURCE_ROOT; };
+		487B8BE8ABDD771EA9E87751 /* ContrastPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ContrastPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/ContrastPass.cpp"; sourceTree = SOURCE_ROOT; };
+		4AA3CFCA59CD3160BF7C5829 /* KaleidoscopePass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = KaleidoscopePass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/KaleidoscopePass.h"; sourceTree = SOURCE_ROOT; };
+		5A73B329228653456C6A2ED5 /* FxaaPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = FxaaPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/FxaaPass.h"; sourceTree = SOURCE_ROOT; };
+		5AB0D12099BB26A6711D077F /* BleachBypassPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = BleachBypassPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/BleachBypassPass.cpp"; sourceTree = SOURCE_ROOT; };
+		5F301375A4823512D6BBA46C /* RimHighlightingPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RimHighlightingPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/RimHighlightingPass.h"; sourceTree = SOURCE_ROOT; };
+		695BAF657D57E0BF9B8FC6B0 /* PostProcessing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PostProcessing.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/PostProcessing.h"; sourceTree = SOURCE_ROOT; };
+		74BEE4DA218781710765F021 /* GodRaysPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GodRaysPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/GodRaysPass.h"; sourceTree = SOURCE_ROOT; };
+		79F8267B7AEFD87C882EBC34 /* HorizontalTiltShifPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = HorizontalTiltShifPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/HorizontalTiltShifPass.h"; sourceTree = SOURCE_ROOT; };
+		7C928E22D2ACC96716341650 /* FakeSSSPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = FakeSSSPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/FakeSSSPass.h"; sourceTree = SOURCE_ROOT; };
+		7CCA3CAD784B6D650997C236 /* FxaaPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = FxaaPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/FxaaPass.cpp"; sourceTree = SOURCE_ROOT; };
+		7E416DF1F4DC5282136ADAF7 /* PixelatePass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = PixelatePass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/PixelatePass.cpp"; sourceTree = SOURCE_ROOT; };
+		8C03B9E52B3E93A222341FB8 /* RimHighlightingPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = RimHighlightingPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/RimHighlightingPass.cpp"; sourceTree = SOURCE_ROOT; };
+		8D6EFA41FC26E11D58D1AF4D /* RGBShiftPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = RGBShiftPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/RGBShiftPass.cpp"; sourceTree = SOURCE_ROOT; };
+		8F6FCD77E2FA31B6BA8069B5 /* VerticalTiltShifPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = VerticalTiltShifPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/VerticalTiltShifPass.cpp"; sourceTree = SOURCE_ROOT; };
+		92586CB19AED016B2BC0E347 /* LimbDarkeningPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = LimbDarkeningPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/LimbDarkeningPass.cpp"; sourceTree = SOURCE_ROOT; };
+		990355FF5DFB511465CCCBD5 /* NoiseWarpPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = NoiseWarpPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/NoiseWarpPass.h"; sourceTree = SOURCE_ROOT; };
+		9AE720DDA3A67404F3B4EF49 /* ZoomBlurPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ZoomBlurPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/ZoomBlurPass.h"; sourceTree = SOURCE_ROOT; };
+		ABA3EFE86759DDC665FAB329 /* ofxPostProcessing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPostProcessing.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/ofxPostProcessing.h"; sourceTree = SOURCE_ROOT; };
+		AF2A331F4773D6EC1FDDBAA9 /* BleachBypassPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BleachBypassPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/BleachBypassPass.h"; sourceTree = SOURCE_ROOT; };
+		B0E849908E851CE47AA81D4C /* ToonPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ToonPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/ToonPass.h"; sourceTree = SOURCE_ROOT; };
+		B4ECD3689BB7EE3B6D565E6D /* DofPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DofPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/DofPass.h"; sourceTree = SOURCE_ROOT; };
+		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../of_v0.8.4_osx_release/libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		BED33A79241E34727011CB5B /* ContrastPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ContrastPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/ContrastPass.h"; sourceTree = SOURCE_ROOT; };
+		C90ACB14ABBAFF2D79870969 /* ZoomBlurPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ZoomBlurPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/ZoomBlurPass.cpp"; sourceTree = SOURCE_ROOT; };
+		C9AD3C03B7AD4A3BCEA61BBA /* LUTPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = LUTPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/LUTPass.cpp"; sourceTree = SOURCE_ROOT; };
+		CAF4D9D63AADBFB465E11166 /* DofPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = DofPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/DofPass.cpp"; sourceTree = SOURCE_ROOT; };
+		D186682AD0A9EC269FCDD9D9 /* DofAltPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = DofAltPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/DofAltPass.cpp"; sourceTree = SOURCE_ROOT; };
+		D6384D1426E94F259FFD6165 /* ConvolutionPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ConvolutionPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/ConvolutionPass.cpp"; sourceTree = SOURCE_ROOT; };
+		DD495793D86C102AAE497629 /* KaleidoscopePass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = KaleidoscopePass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/KaleidoscopePass.cpp"; sourceTree = SOURCE_ROOT; };
+		DEDE0E526F4D0AB67E68DF91 /* SSAOPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = SSAOPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/SSAOPass.cpp"; sourceTree = SOURCE_ROOT; };
+		E057E68FAC5F129C6EE3ACC0 /* HorizontalTiltShifPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = HorizontalTiltShifPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/HorizontalTiltShifPass.cpp"; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../of_v0.8.4_osx_release/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E454A15C15965FD1BDD3B604 /* GodRaysPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = GodRaysPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/GodRaysPass.cpp"; sourceTree = SOURCE_ROOT; };
+		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		E45BE9770E8CC7DD009D7055 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		E4B69B5B0A3A1756003C02F2 /* FireFlies_3Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireFlies_3Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		E4C2424610CC5A17004149E2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../of_v0.8.4_osx_release/libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E655DBB54E601C4BC068D681 /* ConvolutionPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ConvolutionPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/ConvolutionPass.h"; sourceTree = SOURCE_ROOT; };
+		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		EE11C5FEE9427E0AFAC085B8 /* ToonPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ToonPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/ToonPass.cpp"; sourceTree = SOURCE_ROOT; };
+		FA0B2A15BFF308EAEFE0EF78 /* RenderPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = RenderPass.cpp; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/RenderPass.cpp"; sourceTree = SOURCE_ROOT; };
+		FD6A46C0D8BB38E231950534 /* BloomPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BloomPass.h; path = "../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src/BloomPass.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */,
+				E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */,
+				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
+				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
+				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
+				E45BE97F0E8CC7DD009D7055 /* CoreAudio.framework in Frameworks */,
+				E45BE9800E8CC7DD009D7055 /* CoreFoundation.framework in Frameworks */,
+				E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */,
+				E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */,
+				E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */,
+				E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */,
+				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
+				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
+				E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71E71DEED84DE92BD424F439 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5AB0D12099BB26A6711D077F /* BleachBypassPass.cpp */,
+				AF2A331F4773D6EC1FDDBAA9 /* BleachBypassPass.h */,
+				0B77D5DF7BBD7E730B6E7E94 /* BloomPass.cpp */,
+				FD6A46C0D8BB38E231950534 /* BloomPass.h */,
+				487B8BE8ABDD771EA9E87751 /* ContrastPass.cpp */,
+				BED33A79241E34727011CB5B /* ContrastPass.h */,
+				D6384D1426E94F259FFD6165 /* ConvolutionPass.cpp */,
+				E655DBB54E601C4BC068D681 /* ConvolutionPass.h */,
+				D186682AD0A9EC269FCDD9D9 /* DofAltPass.cpp */,
+				08D18B5BA77D90127339D34D /* DofAltPass.h */,
+				CAF4D9D63AADBFB465E11166 /* DofPass.cpp */,
+				B4ECD3689BB7EE3B6D565E6D /* DofPass.h */,
+				3C69686827B9443AF2C8338C /* EdgePass.cpp */,
+				26705B02517E669D6A7FF27E /* EdgePass.h */,
+				05C7F3D897AB489A6E988C5F /* FakeSSSPass.cpp */,
+				7C928E22D2ACC96716341650 /* FakeSSSPass.h */,
+				7CCA3CAD784B6D650997C236 /* FxaaPass.cpp */,
+				5A73B329228653456C6A2ED5 /* FxaaPass.h */,
+				E454A15C15965FD1BDD3B604 /* GodRaysPass.cpp */,
+				74BEE4DA218781710765F021 /* GodRaysPass.h */,
+				E057E68FAC5F129C6EE3ACC0 /* HorizontalTiltShifPass.cpp */,
+				79F8267B7AEFD87C882EBC34 /* HorizontalTiltShifPass.h */,
+				DD495793D86C102AAE497629 /* KaleidoscopePass.cpp */,
+				4AA3CFCA59CD3160BF7C5829 /* KaleidoscopePass.h */,
+				92586CB19AED016B2BC0E347 /* LimbDarkeningPass.cpp */,
+				2B804FC444070500CB4FF1B5 /* LimbDarkeningPass.h */,
+				C9AD3C03B7AD4A3BCEA61BBA /* LUTPass.cpp */,
+				4134081624AD003F389F4743 /* LUTPass.h */,
+				3080B8DEA3AE1A8B2A587E24 /* NoiseWarpPass.cpp */,
+				990355FF5DFB511465CCCBD5 /* NoiseWarpPass.h */,
+				ABA3EFE86759DDC665FAB329 /* ofxPostProcessing.h */,
+				7E416DF1F4DC5282136ADAF7 /* PixelatePass.cpp */,
+				0D18898271C58A888D0CCB1C /* PixelatePass.h */,
+				195825FE8925B7E866B13146 /* PostProcessing.cpp */,
+				695BAF657D57E0BF9B8FC6B0 /* PostProcessing.h */,
+				FA0B2A15BFF308EAEFE0EF78 /* RenderPass.cpp */,
+				16BE3AEE356AE9CEEF197C13 /* RenderPass.h */,
+				8D6EFA41FC26E11D58D1AF4D /* RGBShiftPass.cpp */,
+				3E0F0FB1BC1C3936C70FA0D7 /* RGBShiftPass.h */,
+				8C03B9E52B3E93A222341FB8 /* RimHighlightingPass.cpp */,
+				5F301375A4823512D6BBA46C /* RimHighlightingPass.h */,
+				DEDE0E526F4D0AB67E68DF91 /* SSAOPass.cpp */,
+				0A09A99D43A2D1F0AB04B50E /* SSAOPass.h */,
+				EE11C5FEE9427E0AFAC085B8 /* ToonPass.cpp */,
+				B0E849908E851CE47AA81D4C /* ToonPass.h */,
+				8F6FCD77E2FA31B6BA8069B5 /* VerticalTiltShifPass.cpp */,
+				2EE109270359230A49932038 /* VerticalTiltShifPass.h */,
+				C90ACB14ABBAFF2D79870969 /* ZoomBlurPass.cpp */,
+				9AE720DDA3A67404F3B4EF49 /* ZoomBlurPass.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		8040E6AFB7359F267E0E5639 /* ofxPostProcessing-master */ = {
+			isa = PBXGroup;
+			children = (
+				71E71DEED84DE92BD424F439 /* src */,
+			);
+			name = "ofxPostProcessing-master";
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				8040E6AFB7359F267E0E5639 /* ofxPostProcessing-master */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		BBAB23C913894ECA00AA2426 /* system frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7F985F515E0DE99003869B5 /* Accelerate.framework */,
+				E4C2424410CC5A17004149E2 /* AppKit.framework */,
+				E4C2424510CC5A17004149E2 /* Cocoa.framework */,
+				E4C2424610CC5A17004149E2 /* IOKit.framework */,
+				E45BE9710E8CC7DD009D7055 /* AGL.framework */,
+				E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */,
+				E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */,
+				E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */,
+				E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */,
+				E45BE9770E8CC7DD009D7055 /* CoreServices.framework */,
+				E45BE9790E8CC7DD009D7055 /* OpenGL.framework */,
+				E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */,
+				E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */,
+				E7E077E715D3B6510020DFD4 /* QTKit.framework */,
+			);
+			name = "system frameworks";
+			sourceTree = "<group>";
+		};
+		BBAB23CA13894EDB00AA2426 /* 3rd party frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBAB23BE13894E4700AA2426 /* GLUT.framework */,
+			);
+			name = "3rd party frameworks";
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E45BE5980E8CC70C009D7055 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBAB23CA13894EDB00AA2426 /* 3rd party frameworks */,
+				BBAB23C913894ECA00AA2426 /* system frameworks */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				E45BE5980E8CC70C009D7055 /* frameworks */,
+				E4B69B5B0A3A1756003C02F2 /* FireFlies_3Debug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				0898F3011A203FD4004F9010 /* FireFlies03.cpp */,
+				0898F3021A203FD4004F9010 /* FireFlies03.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* FireFlies_3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "FireFlies_3" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = FireFlies_3;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* FireFlies_3Debug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "FireFlies_3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* FireFlies_3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f ../../of_v0.8.4_osx_release/libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\ncp -f \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				3CCAC30BAA70C2EB2205296F /* BleachBypassPass.cpp in Sources */,
+				B3BC8B6667B5595BFD7C6711 /* BloomPass.cpp in Sources */,
+				43F27E5E493C43408201B420 /* ContrastPass.cpp in Sources */,
+				3D5904F2C34E4A05C70CFA88 /* ConvolutionPass.cpp in Sources */,
+				82432C3F3F7A863D85FC77C5 /* DofAltPass.cpp in Sources */,
+				4BF48B12FBF696A6DF506F7D /* DofPass.cpp in Sources */,
+				C39545B8FF43529ED25EE761 /* EdgePass.cpp in Sources */,
+				6C043E27ABC34F4D376A388D /* FakeSSSPass.cpp in Sources */,
+				0898F3031A203FD4004F9010 /* FireFlies03.cpp in Sources */,
+				4DA60856E5CB07E724775165 /* FxaaPass.cpp in Sources */,
+				91B641C197D7F2A23B8C5840 /* GodRaysPass.cpp in Sources */,
+				30A9432CBD050473C1FCBE95 /* HorizontalTiltShifPass.cpp in Sources */,
+				6E7D9F4D28B72DBF21B1D959 /* KaleidoscopePass.cpp in Sources */,
+				B4B0341C3A41DE572B9C7FD3 /* LimbDarkeningPass.cpp in Sources */,
+				B81485D401EFAB0A45D6E8EF /* LUTPass.cpp in Sources */,
+				E4672E7D0FC34570436C9814 /* NoiseWarpPass.cpp in Sources */,
+				8AE352011D7B787C9BC0EA22 /* PixelatePass.cpp in Sources */,
+				F9F1B7B6EB94F8DB66C6C6B2 /* PostProcessing.cpp in Sources */,
+				4C35719EDC8D87425D8AE6DC /* RenderPass.cpp in Sources */,
+				5140FA69BA53F40CA233C073 /* RGBShiftPass.cpp in Sources */,
+				D7FCEED20503EE61DB11A31B /* RimHighlightingPass.cpp in Sources */,
+				B10CF2322466E2C3726EFFF8 /* SSAOPass.cpp in Sources */,
+				852333874676A76FDD655F73 /* ToonPass.cpp in Sources */,
+				47A703A811B0EE16E6965D39 /* VerticalTiltShifPass.cpp in Sources */,
+				2A4998A169CA843F667231BC /* ZoomBlurPass.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					"../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/libs",
+					"../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					"../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/libs",
+					"../../of_v0.8.4_osx_release/addons/ofxPostProcessing-master/src",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../of_v0.8.4_osx_release/libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_19)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_20)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_21)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_22)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_23)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_24)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_25)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_26)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_27)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_28)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_29)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_30)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_31)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_32)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_33)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_34)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_35)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_36)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_37)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_38)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_39)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_40)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_41)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_42)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_43)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_44)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_45)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_46)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_47)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_48)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../of_v0.8.4_osx_release/libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_19)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_20)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_21)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_22)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_23)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_24)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_25)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_26)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_27)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_28)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_29)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_30)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_31)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_32)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_33)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_34)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_35)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_36)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_37)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_38)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_39)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_40)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_41)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_42)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_43)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_44)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_45)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_46)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_47)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_48)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "FireFlies_3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "FireFlies_3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
